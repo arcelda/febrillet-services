@@ -1,5 +1,5 @@
 import React from "react";
-import { SERVICES_DATA } from "@/data/services";
+import { SERVICES_DATA } from "../data/services";
 
 export const ServicesGrid = () => {
   return (
