@@ -83,9 +83,9 @@ export const Navbar = () => {
           <a
             href="#about"
             onClick={() => setIsOpen(false)}
-            className="block text-slate-200 hover:text-brand-orange text-base font-medium py-1"
+            className="block text-slate-200 hover:text-brand-orange text-base font-medium py-1 unavailable"
           >
-            About Us
+            About Us (Coming Soon)
           </a>
           <a
             href="#contact"
