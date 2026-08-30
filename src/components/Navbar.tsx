@@ -32,7 +32,7 @@ export const Navbar = () => {
           </a>
           <a
             href="#about"
-            className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+            className="text-sm font-medium text-slate-300 hover:text-white transition-colors unavailable"
           >
             About Us
           </a>
