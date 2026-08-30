@@ -12,7 +12,7 @@ export const TrustBadges = () => {
       icon: "⭐",
       titleEn: "Quality You Can Trust",
       titleEs: "Confianza Que Se Nota",
-      desc: "Top-tier craftsmanship with durable materials and clean finishes.",
+      desc: "Quality craftsmanship with durable materials and clean finishes.",
     },
     {
       icon: "📋",

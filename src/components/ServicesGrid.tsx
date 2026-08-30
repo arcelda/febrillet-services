@@ -14,7 +14,7 @@ export const ServicesGrid = () => {
             Professional Construction & Repair
           </h2>
           <p className="mt-4 text-slate-600">
-            From minor repairs to complete remodels, we provide high-quality craftsmanship with results that last.
+            From minor repairs to complete remodels, we provide dependable craftsmanship with results that last.
           </p>
         </div>
 
