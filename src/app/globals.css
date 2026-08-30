@@ -12,6 +12,16 @@
   --color-brand-dark: #050D1E;
 }
 
+/* Custom utility class for the hero background */
+@utility bg-hero-pattern {
+  /* The path is relative to your compiled CSS, but 
+     / public/ is mapped to the root URL (/) */
+  background-image: url('/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
