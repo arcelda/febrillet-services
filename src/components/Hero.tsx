@@ -47,7 +47,7 @@ export const Hero = () => {
           </a>
           <a
             href="#contact"
-            className="w-full sm:w-auto bg-transparent border-2 border-white/40 hover:border-white text-white font-semibold py-3.5 px-8 sm:py-4 sm:px-10 rounded-xl transition duration-200 text-center"
+            className="w-full sm:w-auto bg-transparent border-2 border-white/40 hover:border-white text-white font-semibold py-3.5 px-8 sm:py-4 sm:px-10 rounded-xl transition duration-200 text-center unavailable"
           >
             Estimate (Coming Soon)
           </a>
