@@ -34,7 +34,7 @@ export const Navbar = () => {
             href="#about"
             className="text-sm font-medium text-slate-300 hover:text-white transition-colors unavailable"
           >
-            About Us
+            About Us (Coming Soon)
           </a>
           <a
             href="#contact"

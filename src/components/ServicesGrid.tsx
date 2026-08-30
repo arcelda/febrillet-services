@@ -43,9 +43,9 @@ export const ServicesGrid = () => {
               <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
                 <a
                   href="#contact"
-                  className="text-sm font-bold text-brand-orange hover:text-orange-600 transition-colors inline-flex items-center gap-1"
+                  className="text-sm font-bold text-brand-orange hover:text-orange-600 transition-colors inline-flex items-center gap-1 unavailable"
                 >
-                  Free Estimate &rarr;
+                  Free Estimate &rarr (Coming Soon);
                 </a>
               </div>
             </div>
