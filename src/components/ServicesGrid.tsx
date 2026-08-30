@@ -45,7 +45,7 @@ export const ServicesGrid = () => {
                   href="#contact"
                   className="text-sm font-bold text-brand-orange hover:text-orange-600 transition-colors inline-flex items-center gap-1 unavailable"
                 >
-                  Free Estimate (Coming Soon) &rarr;
+                  Estimate (Coming Soon) &rarr;
                 </a>
               </div>
             </div>
