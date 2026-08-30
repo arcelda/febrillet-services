@@ -32,3 +32,10 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.unavailable {
+  color: gray!important;
+  text-decoration: line-through!important;
+  cursor: not-allowed!important;
+}
+
