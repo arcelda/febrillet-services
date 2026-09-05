@@ -4,17 +4,19 @@ import Image from "next/image";
 interface ProjectItem {
   title: string;
   category: string;
-  image: string;
+  image?: string;
+  beforeImage?: string;
+  afterImage?: string;
   description: string;
 }
 
-// Replace the image paths below with your exact filenames in public/projects/
 const projects: ProjectItem[] = [
   {
-    title: "Kitchen Remodel & Modernization",
+    title: "Kitchen Remodel & Transformation",
     category: "Remodeling",
-    image: "/projects/kitchen_after.jpeg",
-    description: "Complete kitchen renovation featuring updated layout, clean finishes, and modern cabinetry.",
+    beforeImage: "/projects/kitchen_before.jpeg",
+    afterImage: "/projects/kitchen_after.jpeg",
+    description: "Complete overhaul from initial demolition to modernized countertops, cabinetry, and fresh paint.",
   },
   {
     title: "Interior Stairwell Transformation",
@@ -39,12 +41,6 @@ const projects: ProjectItem[] = [
     category: "Carpentry",
     image: "/projects/shed.jpeg",
     description: "Solid framing, secure exterior siding, and custom-built residential storage structure.",
-  },
-  {
-    title: "Kitchen Demolition & Prep Phase",
-    category: "Remodeling",
-    image: "/projects/kitchen_before.jpeg",
-    description: "Initial tear-down, framing evaluation, and surface preparation ahead of full renovation.",
   },
 ];
 
@@ -73,18 +69,51 @@ export const ProjectGallery = () => {
               className="group relative overflow-hidden rounded-2xl bg-brand-navy border border-slate-800 transition-all duration-300 hover:-translate-y-1 hover:border-slate-700 shadow-md flex flex-col"
             >
               {/* Image Frame */}
-              <div className="relative h-64 w-full overflow-hidden bg-slate-900">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                <div className="relative h-64 w-full overflow-hidden bg-slate-900">
+                {project.beforeImage && project.afterImage ? (
+                    // Side-by-side split view for Kitchen Before & After
+                    <div className="flex h-full w-full">
+                    <div className="relative w-1/2 h-full border-r border-slate-800">
+                        <Image
+                        src={project.beforeImage}
+                        alt={`${project.title} - Before`}
+                        fill
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 17vw"
+                        className="object-cover"
+                        />
+                        <span className="absolute bottom-2 left-2 bg-black/75 text-slate-200 text-[10px] font-bold px-2 py-0.5 rounded tracking-wide uppercase backdrop-blur-sm">
+                        Before
+                        </span>
+                    </div>
+                    <div className="relative w-1/2 h-full">
+                        <Image
+                        src={project.afterImage}
+                        alt={`${project.title} - After`}
+                        fill
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 17vw"
+                        className="object-cover"
+                        />
+                        <span className="absolute bottom-2 right-2 bg-brand-orange text-white text-[10px] font-bold px-2 py-0.5 rounded tracking-wide uppercase shadow-sm">
+                        After
+                        </span>
+                    </div>
+                    </div>
+                ) : (
+                    // Standard single image view
+                    <Image
+                    src={project.image || "/hero-bg.jpg"}
+                    alt={project.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                )}
+
+                {/* Category Pill */}
                 <span className="absolute top-3 left-3 bg-brand-navy/90 text-brand-orange border border-slate-700/60 text-xs font-semibold px-2.5 py-1 rounded-md backdrop-blur-sm">
-                  {project.category}
+                    {project.category}
                 </span>
-              </div>
+                </div>      
 
               {/* Description */}
               <div className="p-5 space-y-1.5 flex-1 flex flex-col justify-between">
