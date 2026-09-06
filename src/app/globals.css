@@ -15,7 +15,7 @@
 /* Custom utility class for the hero background */
 @utility bg-hero-pattern {
   background-image: url('/hero-bg.jpg');
-  background-size: cover;
+  background-size: contain;
   background-position: center top; /* Keeps the top framing visible on tall screens */
   background-repeat: no-repeat;
 }
