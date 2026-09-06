@@ -45,7 +45,7 @@ export const ServicesGrid = () => {
                   href="#contact"
                   className="text-sm font-bold text-brand-orange hover:text-orange-600 transition-colors inline-flex items-center gap-1 unavailable"
                 >
-                  Estimate (Under Construction) &rarr;
+                  Request a Quote &rarr;
                 </a>
               </div>
             </div>

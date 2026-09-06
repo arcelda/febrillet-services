@@ -16,8 +16,8 @@ export const TrustBadges = () => {
     },
     {
       icon: "📋",
-      titleEn: "Estimates (Under Construction)",
-      titleEs: "Estimados (En Construcción)",
+      titleEn: "Free Estimates",
+      titleEs: "Estimados Gratis",
       desc: "Upfront, transparent quotes with zero hidden surprises.",
     },
   ];

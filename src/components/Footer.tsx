@@ -35,7 +35,7 @@ export const Footer = () => {
               <a href="#gallery" className="hover:text-brand-orange transition">Recent Work</a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-brand-orange transition">Get a Free Estimate</a>
+              <a href="#contact" className="hover:text-brand-orange transition">Request a Quote</a>
             </li>
           </ul>
         </div>
